@@ -1,13 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Goodscard from '../components/goodsCard.astro';
+import Goodscard from '../components/goodsJsonCard.astro';
 import { getCollection } from 'astro:content';
-const workPages = await getCollection('goods');
 ---
 
 <Layout>
 <main>
-  {workPages.map(productPage => (<Goodscard title={productPage.data.title} href=`/works/${productPage.slug}` thumbnail={productPage.data.thumbnail} body={productPage.data.description} />
-))}
-</main>
+  <main class="main">
+    <div class="main__inner">
+    <h2 class="main__title">商品一覧</h2>
+    <Goodscard />
+  </div>
+  </main>
 </Layout>

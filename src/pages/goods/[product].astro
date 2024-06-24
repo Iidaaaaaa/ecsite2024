@@ -15,7 +15,12 @@ const goodsData = goods.find(({url}) => product === url);
 ---
 
 <Layout>
-<p>{goodsData.name}</p>
-<p>{goodsData.price}</p>
-<img src=`/images/${goodsData.itemphotos[0]}`>
+
+    <div class="goods goods__inner">
+    <img class="goods__image" src=`/images/${goodsData.itemphotos[0]}`>
+  <div class="goods_text">
+    <p class="goods__name">{goodsData.name}</p>
+    <p class="goods__price">{goodsData.price}</p>
+  </div>
+  </div>
 </Layout>

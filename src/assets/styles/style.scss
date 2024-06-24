@@ -1,0 +1,134 @@
+@charset 'utf-8';
+body {
+  font-family: "Noto Sans";
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  background: url("/public/images/kabayakisan01.jpg") left center / cover
+    no-repeat;
+  padding-top: 30px;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 100px;
+  &__title {
+    font-size: 36px;
+    color: #000;
+  }
+  &__titdeco {
+    color: #000;
+  }
+  &__inner {
+    width: 86.11%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  &__all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.nav {
+  display: flex;
+  &__home {
+    width: 30px;
+    margin-right: 20px;
+  }
+  &__cart {
+    width: 30px;
+  }
+}
+
+.main {
+  &__title {
+    font-size: 28px;
+    text-align: center;
+    margin: 0 auto 80px;
+  }
+  &__inner {
+    width: 86.11%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 50px;
+  &__all:hover {
+    color: #f00;
+  }
+  &__title {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+  }
+  &__text {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+    color: #000;
+    margin-top: 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* 任意の行数を指定 */
+  }
+}
+
+.footer {
+  padding-bottom: 50px;
+  &__inner {
+    width: 86.11%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin: 70px 0 36px auto;
+  }
+  &__home {
+    width: 30px;
+  }
+  &__x {
+    width: 30px;
+  }
+  &__ins {
+    width: 30px;
+  }
+  &__copy {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.goods {
+  display: flex;
+  &__inner {
+    width: 86.11%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  &__image {
+    margin-right: 50px;
+  }
+  &__name {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.09em;
+  }
+}

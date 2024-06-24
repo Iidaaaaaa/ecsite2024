@@ -11,7 +11,63 @@
     "url": "umaibo"
   },
   {
-    "itemphotos": ["kabayakisan01.jpg", "kabayakisan02.jpg", "kabayakisan03.jpg"],
+    "itemphotos": [
+      "kabayakisan01.jpg",
+      "kabayakisan02.jpg",
+      "kabayakisan03.jpg"
+    ],
+    "name": "蒲焼さん太郎",
+    "price": 15,
+    "state": true,
+    "text": "魚肉のすり身を板状にし、うなぎの蒲焼きをイメージしたタレで味付けしました。 うなぎの蒲焼きという高級品を駄菓子で気軽に食べられるように企画した商品です。",
+    "id": 4971749110335,
+    "colors": "赤",
+    "maker": "（株）菓道",
+    "url": "kabayakisan"
+  },
+  {
+    "itemphotos": ["umaibo01.jpg", "umaibo02.jpg"],
+    "name": "うまい棒サラミ味",
+    "price": 12,
+    "state": true,
+    "text": "スパイスとスモークのきいたサラミスティックをうまい棒で再現しました。",
+    "id": 27002,
+    "colors": "黄",
+    "maker": "（株）やおきん",
+    "url": "umaibo"
+  },
+  {
+    "itemphotos": [
+      "kabayakisan01.jpg",
+      "kabayakisan02.jpg",
+      "kabayakisan03.jpg"
+    ],
+    "name": "蒲焼さん太郎",
+    "price": 15,
+    "state": true,
+    "text": "魚肉のすり身を板状にし、うなぎの蒲焼きをイメージしたタレで味付けしました。 うなぎの蒲焼きという高級品を駄菓子で気軽に食べられるように企画した商品です。",
+    "id": 4971749110335,
+    "colors": "赤",
+    "maker": "（株）菓道",
+    "url": "kabayakisan"
+  },
+  {
+    "itemphotos": ["umaibo01.jpg", "umaibo02.jpg"],
+    "name": "うまい棒サラミ味",
+    "price": 12,
+    "state": true,
+    "text": "スパイスとスモークのきいたサラミスティックをうまい棒で再現しました。",
+    "id": 27002,
+    "colors": "黄",
+    "maker": "（株）やおきん",
+    "url": "umaibo"
+  },
+  {
+    "itemphotos": [
+      "kabayakisan01.jpg",
+      "kabayakisan02.jpg",
+      "kabayakisan03.jpg"
+    ],
     "name": "蒲焼さん太郎",
     "price": 15,
     "state": true,

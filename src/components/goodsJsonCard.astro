@@ -3,10 +3,15 @@ import goods from "../data/goods.json";
 console.log(goods);
 ---
 
-<ul>
-  {goods.map((list) => 
-     <li>{list.name}</li>
-     <img src=`/images/${list.itemphotos[0]}` />
-     <p>{list.text}</p>
+<ul class="card">
+  {goods.map((list) =>
+     <li class="card__all"><a href=`./goods/${list.url}`>
+
+     <img class="card__image" src=`/images/${list.itemphotos[0]}` />
+     <p class="card__title">{list.name}</p>
+     <p class="card__text">{list.text}</p>
+    </a>
+
+    </li>
   )}
 </ul>
