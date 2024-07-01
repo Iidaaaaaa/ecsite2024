@@ -1,6 +1,6 @@
 [
   {
-    "itemphotos": ["umaibo01.jpg", "umaibo02.jpg"],
+    "itemphotos": ["umaibo01.jpg"],
     "name": "うまい棒サラミ味",
     "price": 12,
     "state": true,
@@ -11,70 +11,80 @@
     "url": "umaibo"
   },
   {
-    "itemphotos": [
-      "kabayakisan01.jpg",
-      "kabayakisan02.jpg",
-      "kabayakisan03.jpg"
-    ],
-    "name": "蒲焼さん太郎",
-    "price": 15,
+    "itemphotos": ["ramen7.png"],
+    "name": "大阪のまぜそばmaren",
+    "price": 1000,
     "state": true,
-    "text": "魚肉のすり身を板状にし、うなぎの蒲焼きをイメージしたタレで味付けしました。 うなぎの蒲焼きという高級品を駄菓子で気軽に食べられるように企画した商品です。",
+    "text": "大阪の合宿で食べためっちゃ美味しいラーメンです。TKGみたいな味がしました。",
     "id": 4971749110335,
     "colors": "赤",
     "maker": "（株）菓道",
-    "url": "kabayakisan"
+    "url": "ramen"
   },
   {
-    "itemphotos": ["umaibo01.jpg", "umaibo02.jpg"],
-    "name": "うまい棒サラミ味",
-    "price": 12,
-    "state": true,
-    "text": "スパイスとスモークのきいたサラミスティックをうまい棒で再現しました。",
+    "itemphotos": ["ramen6.png"],
+    "name": "大阪のラーメン、あらうま堂",
+    "price": 880,
+    "state": false,
+    "text": "大阪で食べたラーメンです。味は寿がきやに似てました。",
     "id": 27002,
     "colors": "黄",
     "maker": "（株）やおきん",
-    "url": "umaibo"
+    "url": "ramen"
   },
   {
-    "itemphotos": [
-      "kabayakisan01.jpg",
-      "kabayakisan02.jpg",
-      "kabayakisan03.jpg"
-    ],
-    "name": "蒲焼さん太郎",
-    "price": 15,
+    "itemphotos": ["ramen5.png"],
+    "name": "田所商店",
+    "price": 1000,
     "state": true,
-    "text": "魚肉のすり身を板状にし、うなぎの蒲焼きをイメージしたタレで味付けしました。 うなぎの蒲焼きという高級品を駄菓子で気軽に食べられるように企画した商品です。",
+    "text": "くそ美味い味噌ラーメンのお店.",
     "id": 4971749110335,
     "colors": "赤",
     "maker": "（株）菓道",
-    "url": "kabayakisan"
+    "url": "ramen"
   },
   {
-    "itemphotos": ["umaibo01.jpg", "umaibo02.jpg"],
-    "name": "うまい棒サラミ味",
-    "price": 12,
+    "itemphotos": ["ramen4.png"],
+    "name": "てっぺんまぜそば",
+    "price": 1100,
     "state": true,
-    "text": "スパイスとスモークのきいたサラミスティックをうまい棒で再現しました。",
+    "text": "イチオシのまぜそばてっぺん。たべれば気分は最高潮。",
     "id": 27002,
     "colors": "黄",
     "maker": "（株）やおきん",
-    "url": "umaibo"
+    "url": "ramen"
   },
   {
-    "itemphotos": [
-      "kabayakisan01.jpg",
-      "kabayakisan02.jpg",
-      "kabayakisan03.jpg"
-    ],
-    "name": "蒲焼さん太郎",
-    "price": 15,
+    "itemphotos": ["ramen3.png"],
+    "name": "歌志軒",
+    "price": 700,
     "state": true,
-    "text": "魚肉のすり身を板状にし、うなぎの蒲焼きをイメージしたタレで味付けしました。 うなぎの蒲焼きという高級品を駄菓子で気軽に食べられるように企画した商品です。",
+    "text": "歌志軒の油そばです。自分で好きな味の濃さにできるのが特徴です。",
     "id": 4971749110335,
     "colors": "赤",
     "maker": "（株）菓道",
-    "url": "kabayakisan"
+    "url": "ramen"
+  },
+  {
+    "itemphotos": ["ramen2.png"],
+    "name": "来来亭ラーメン",
+    "price": 1100,
+    "state": true,
+    "text": "お気に入りにラーメンです。細麺で麺の量が多いのが特徴です。",
+    "id": 27002,
+    "colors": "黄",
+    "maker": "（株）やおきん",
+    "url": "ramen"
+  },
+  {
+    "itemphotos": ["ramen1.png"],
+    "name": "横綱ラーメン",
+    "price": 1000,
+    "state": true,
+    "text": "23号線沿いにある横綱ラーメンの味玉ラーメンです。ネギはセルフなのでマシマシ入れて食べると美味しくいただけます。",
+    "id": 27002,
+    "colors": "黄",
+    "maker": "（株）やおきん",
+    "url": "ramen"
   }
 ]

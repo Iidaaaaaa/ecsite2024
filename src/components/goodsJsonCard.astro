@@ -7,9 +7,16 @@ console.log(goods);
   {goods.map((list) =>
      <li class="card__all"><a href=`./goods/${list.url}`>
 
+<div class="card__mask">
      <img class="card__image" src=`/images/${list.itemphotos[0]}` />
+</div>
      <p class="card__title">{list.name}</p>
      <p class="card__text">{list.text}</p>
+     <p class="card__price">価格：{list.price}円</p>
+     {list.state === false &&( <p  class="card__state">うりきれ</p>) }
+     {list.state === true &&( <p  class="card__state">発売中</p>) }
+
+
     </a>
 
     </li>
