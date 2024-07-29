@@ -11,6 +11,7 @@ $breakpoints: (
 }
 
 body {
+  position: relative;
   font-family: "Noto Sans";
 }
 
@@ -21,17 +22,30 @@ a {
   text-decoration: none;
 }
 .header {
-  background: url("/public/images/main.jpg") left center / cover no-repeat;
+  position: relative;
+  background: url("/02_ecsite/images/mainvisu.png") center center / cover
+    no-repeat;
   padding-top: 30px;
   width: 100vw;
   height: 100vh;
   margin-bottom: 100px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); // この値を調整して明るさを変更
+    z-index: 1;
+  }
   &__title {
     font-size: 36px;
     color: #000;
+    z-index: 2;
   }
   &__titdeco {
-    color: #000;
+    color: #fff;
   }
   &__inner {
     width: 86.11%;
@@ -47,6 +61,7 @@ a {
 }
 
 .nav {
+  z-index: 2;
   display: flex;
   &__home {
     width: 30px;
@@ -82,11 +97,11 @@ a {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 40px;
-    grid-row-gap: 50px;
+    grid-row-gap: 100px;
   }
 
   &__all {
-    position: relative;
+    max-width: 300px;
   }
   &__all:hover {
     color: #f00;
@@ -107,19 +122,22 @@ a {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3; /* 任意の行数を指定 */
+    line-clamp: 3;
   }
   &__mask {
+    position: relative;
     overflow: hidden;
     object-fit: contain;
     width: 100%;
-    height: 250px;
+    max-width: 300px;
+    height: auto;
   }
   &__image {
     object-fit: contain;
   }
   &__state {
     position: absolute;
-    top: 200px;
+    bottom: 34px;
     display: inline-block;
     margin-top: 20px;
     background-color: #f00;
@@ -128,14 +146,22 @@ a {
   }
   &__price {
     position: absolute;
-    top: 218px;
-    right: 30px;
+    bottom: 0;
+    left: 0;
     font-size: 16px;
     letter-spacing: 0.1em;
     line-height: 1.6;
     background-color: #0033ac;
     color: #fff;
     padding: 4px 8px;
+  }
+  @include mq(sm) {
+    .card {
+      &__state {
+        position: absolute;
+        bottom: 33px;
+      }
+    }
   }
 }
 
@@ -169,19 +195,18 @@ a {
 }
 
 .goods {
-  display: flex;
   &__inner {
     width: 86.11%;
     margin: 0 auto;
     padding: 0;
   }
   &__image {
-    width: 50%;
-    margin-right: 100px;
+    margin: 0 auto;
   }
-  &__text {
-    line-height: 1.9;
+  &__textall {
+    line-height: 1.7;
     margin-top: 30px;
+    font-size: 18px;
   }
   &__name {
     font-size: 28px;
@@ -191,6 +216,69 @@ a {
   &__price {
     margin-top: 30px;
     color: #f00;
-    font-size: 28px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__count {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+  }
+  &__countnum {
+    margin: 0 20px;
+  }
+  &__plus {
+    padding: 3px 10px;
+    font-size: 18px;
+    margin-right: 50px;
+  }
+  &__minas {
+    padding: 3px 15px;
+    font-size: 18px;
+  }
+  &__slide {
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 72.7%;
+  }
+  &__slideimg {
+    border: #000 2px solid;
+    width: 20%;
+    height: auto;
+  }
+  @include mq(sm) {
+    display: flex;
+    justify-content: space-between;
+    .goods {
+      &__left {
+        width: 42%;
+      }
+      &__slide {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 72.7%;
+      }
+      &__slideimg {
+        border: #000 2px solid;
+        width: 20%;
+        height: auto;
+      }
+      &__image {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+      }
+      &__textall {
+        width: 50%;
+      }
+      &__text {
+        margin-top: 30px;
+      }
+    }
   }
 }

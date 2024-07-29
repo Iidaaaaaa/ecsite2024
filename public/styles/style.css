@@ -1,5 +1,6 @@
 @charset "UTF-8";
 body {
+  position: relative;
   font-family: "Noto Sans";
 }
 
@@ -12,18 +13,30 @@ a {
 }
 
 .header {
-  background: url("/public/images/main.jpg") left center/cover no-repeat;
+  position: relative;
+  background: url("/02_ecsite/images/mainvisu.png") center center/cover no-repeat;
   padding-top: 30px;
   width: 100vw;
   height: 100vh;
   margin-bottom: 100px;
 }
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
 .header__title {
   font-size: 36px;
   color: #000;
+  z-index: 2;
 }
 .header__titdeco {
-  color: #000;
+  color: #fff;
 }
 .header__inner {
   width: 86.11%;
@@ -38,6 +51,7 @@ a {
 }
 
 .nav {
+  z-index: 2;
   display: flex;
 }
 .nav__home {
@@ -72,11 +86,11 @@ a {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 40px;
-    grid-row-gap: 50px;
+    grid-row-gap: 100px;
   }
 }
 .card__all {
-  position: relative;
+  max-width: 300px;
 }
 .card__all:hover {
   color: #f00;
@@ -97,13 +111,16 @@ a {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3; /* 任意の行数を指定 */
+  line-clamp: 3;
 }
 .card__mask {
+  position: relative;
   overflow: hidden;
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
-  height: 250px;
+  max-width: 300px;
+  height: auto;
 }
 .card__image {
   -o-object-fit: contain;
@@ -111,7 +128,7 @@ a {
 }
 .card__state {
   position: absolute;
-  top: 200px;
+  bottom: 34px;
   display: inline-block;
   margin-top: 20px;
   background-color: #f00;
@@ -120,14 +137,20 @@ a {
 }
 .card__price {
   position: absolute;
-  top: 218px;
-  right: 30px;
+  bottom: 0;
+  left: 0;
   font-size: 16px;
   letter-spacing: 0.1em;
   line-height: 1.6;
   background-color: #0033ac;
   color: #fff;
   padding: 4px 8px;
+}
+@media screen and (min-width: 400px) {
+  .card .card__state {
+    position: absolute;
+    bottom: 33px;
+  }
 }
 
 .footer {
@@ -159,21 +182,18 @@ a {
   font-size: 14px;
 }
 
-.goods {
-  display: flex;
-}
 .goods__inner {
   width: 86.11%;
   margin: 0 auto;
   padding: 0;
 }
 .goods__image {
-  width: 50%;
-  margin-right: 100px;
+  margin: 0 auto;
 }
-.goods__text {
-  line-height: 1.9;
+.goods__textall {
+  line-height: 1.7;
   margin-top: 30px;
+  font-size: 18px;
 }
 .goods__name {
   font-size: 28px;
@@ -183,6 +203,69 @@ a {
 .goods__price {
   margin-top: 30px;
   color: #f00;
-  font-size: 28px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.goods__count {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+}
+.goods__countnum {
+  margin: 0 20px;
+}
+.goods__plus {
+  padding: 3px 10px;
+  font-size: 18px;
+  margin-right: 50px;
+}
+.goods__minas {
+  padding: 3px 15px;
+  font-size: 18px;
+}
+.goods__slide {
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 72.7%;
+}
+.goods__slideimg {
+  border: #000 2px solid;
+  width: 20%;
+  height: auto;
+}
+@media screen and (min-width: 400px) {
+  .goods {
+    display: flex;
+    justify-content: space-between;
+  }
+  .goods .goods__left {
+    width: 42%;
+  }
+  .goods .goods__slide {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 72.7%;
+  }
+  .goods .goods__slideimg {
+    border: #000 2px solid;
+    width: 20%;
+    height: auto;
+  }
+  .goods .goods__image {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+  }
+  .goods .goods__textall {
+    width: 50%;
+  }
+  .goods .goods__text {
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

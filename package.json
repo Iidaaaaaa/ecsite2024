@@ -7,10 +7,13 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:assets": "node build-assets.mjs"
   },
   "dependencies": {
+    "@nanostores/preact": "^0.5.1",
     "astro": "^4.10.2",
+    "nanostores": "^0.10.3",
     "sass": "^1.77.5"
   }
 }

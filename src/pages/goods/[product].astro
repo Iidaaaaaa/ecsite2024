@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
+
 import goods from "../../data/goods.json";
 export const getStaticPaths = async() => {
   return goods.map(({ url }) => {
@@ -17,11 +18,25 @@ const goodsData = goods.find(({url}) => product === url);
 <Layout>
 
     <div class="goods goods__inner">
-    <img class="goods__image" src=`/images/${goodsData.itemphotos[0]}`>
-  <div class="goods__text">
+      <div class="goods__left"> <img class="goods__image" src=`/02_ecsite/images/${goodsData.itemphotos[0]}`>
+        <div class="goods__slide">
+          <img class="goods__slideimg" src=`/02_ecsite/images/${goodsData.itemphotos[0]}`>
+          <img class="goods__slideimg" src=`/02_ecsite/images/${goodsData.itemphotos[1]}`>
+          <img class="goods__slideimg" src=`/02_ecsite/images/${goodsData.itemphotos[2]}`>
+        </div>
+      </div>
+  <div class="goods__textall">
     <p class="goods__name">{goodsData.name}</p>
     <p class="goods__text">{goodsData.text}</p>
     <p class="goods__price">価格：{goodsData.price}円</p>
+    <div class="goods__count">
+      <button class="goods__minas">-</button>
+      <p class="goods__countnum">0</p>
+      <button class="goods__plus">+</button>
+
+      <button class="goods__cart">カートに入れる</button>
+
+    </div>
   </div>
   </div>
 </Layout>
